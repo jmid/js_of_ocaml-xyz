@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>js_of_ocaml example</title>
+    <script src="_build/jsbridge.js"></script>
+  </head>
+
+  <body>
+<h3>Supported syntax:</h3>
+    <pre>
+    exp ::=  x  |  y  |  z
+         |  exp + exp
+         |  exp - exp
+         |  exp * exp
+         |  exp / exp
+         |  ( exp )
+    </pre>
+    <form>
+      <textarea id="textinput">(x + y) * z</textarea>
+    </form>
+    <button type="button" onclick="result.innerText = interpret(textinput.value)">Evaluate</button>
+    <p>
+      <b>Result</b> (with x=1, y=2, z=3): <i><div id="result"> </div></i>
+    </p>
+</body>
+
+</html>
