@@ -2,8 +2,9 @@ A js_of_ocaml example
 =====================
 
 This is a simple example of how a language processor written in OCaml
-with ocamllex and menhir can be compiled to a client-side JavaScript
-application with [js_of_ocaml](http://ocsigen.org/js_of_ocaml/).
+with ocamllex and [menhir](http://gallium.inria.fr/~fpottier/menhir/)
+can be compiled to a client-side JavaScript application with
+[js_of_ocaml](http://ocsigen.org/js_of_ocaml/).
 
 Internally, it builds and processes an abstract syntax tree (AST) for
 a simple language of arithmetic expressions. The AST is defined in
